@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protección Familiar en Dólares - Planificación Financiera Responsable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon-abba.png" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '4268884596673354');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=4268884596673354&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hay decisiones que no se toman por miedo, sino por responsabilidad.</h1>
+                <p class="hero-subtitle">Cuando todo en tu vida depende de ti, anticiparte es la única forma real de proteger a tus hijos.</p>
+                
+                <div class="hero-pillars">
+                    <div class="pillar">
+                        <i data-lucide="shield-check" class="pillar-icon"></i>
+                        <span>No es especulación</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="compass" class="pillar-icon"></i>
+                        <span>No es improvisación</span>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="trending-up" class="pillar-icon"></i>
+                        <span>No es un gasto impulsivo</span>
+                    </div>
+                </div>
+
+                <p class="hero-cta-text">Es planificación financiera bien hecha.</p>
+                <button class="cta-primary" onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'})">
+                    Solicitar asesoría personalizada
+                </button>
+                
+                <p class="hero-note">Este espacio está diseñado para familias que ya han construido estabilidad y buscan proteger lo más importante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO SECTION -->
+    <section class="formulario-section" id="formulario">
+        <div class="section-container">
+            <div class="form-wrapper">
+                <h2 class="section-title">Evalúa si esta estrategia es adecuada para tu familia</h2>
+                <p class="section-subtitle">Completa tus datos para una evaluación personalizada</p>
+
+                <form id="mainForm" class="main-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez García">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="whatsapp">Número de WhatsApp *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="3001234567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de nacimiento *</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numeroHijos">¿Cuántos hijos tienes? *</label>
+                        <select id="numeroHijos" name="numeroHijos" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="1">1 hijo</option>
+                            <option value="2">2 hijos</option>
+                            <option value="3">3 hijos</option>
+                            <option value="4">4 o más hijos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ingresoMensual">Ingreso mensual aproximado *</label>
+                        <input type="text" id="ingresoMensual" name="ingresoMensual" required placeholder="5.000.000">
+                        <p class="field-note">Este dato es necesario para calcular tu proyección de ahorro</p>
+                    </div>
+
+                    <p class="privacy-note">
+                        🔒 Tu información es confidencial y se utiliza únicamente para esta evaluación.
+                    </p>
+
+                    <button type="submit" class="cta-primary">Evaluar mi situación familiar</button>
+                </form>
+
+                <!-- Mensaje de éxito -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">
+                        <i data-lucide="check-circle-2"></i>
+                    </div>
+                    <h3>¡Listo, <span id="nombreUsuario"></span>!</h3>
+                    <p>En breve, uno de nuestros asesores te escribirá por WhatsApp para mostrarte una opción personalizada de ahorro en dólares, diseñada para proteger a tu familia.</p>
+                    <p class="success-tip">💡 <strong>Recuerda:</strong> Proteger tu futuro y el de tu familia empieza con pequeñas decisiones hoy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUNTO CIEGO SECTION -->
+    <section class="content-section punto-ciego">
+        <div class="section-container">
+            <h2 class="section-title">Generar ingresos no es lo mismo que proteger a tu familia.</h2>
+            <div class="content-card">
+                <p>Muchas personas capaces, disciplinadas y exitosas confían en que siempre podrán resolver.</p>
+                <p>El problema es que la protección real no depende de que todo salga bien, sino de tener un plan incluso cuando no.</p>
+                <p class="emphasis">La mayoría lo descubre demasiado tarde.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENFOQUE CORRECTO SECTION -->
+    <section class="content-section enfoque-correcto">
+        <div class="section-container">
+            <h2 class="section-title">Protección estructurada, sin improvisar</h2>
+            <p class="intro-text">Esta estrategia está pensada para quienes entienden que:</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <p>El respaldo debe funcionar incluso si uno no está</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <p>El valor del dinero importa tanto como su cantidad</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <p>La tranquilidad viene de la anticipación, no de la reacción</p>
+                </div>
+            </div>
+
+            <p class="closing-text">No se trata de ganar más. Se trata de proteger mejor.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EMOCIONAL -->
+    <section class="content-section emotional-section">
+        <div class="section-container">
+            <div class="emotional-card">
+                <h2 class="section-title">El verdadero liderazgo también se ve en las decisiones difíciles</h2>
+                <p class="emotional-text">Hablar del futuro de tus hijos no es cómodo. Pero evitarlo no lo hace desaparecer.</p>
+                <p class="emotional-text emphasis">Planear hoy significa evitar que otros tengan que improvisar mañana.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÑALES DE CONFIANZA -->
+    <section class="content-section trust-section">
+        <div class="section-container">
+            <h2 class="section-title">Acompañamiento profesional</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i data-lucide="clipboard-check"></i>
+                    <span>Evaluación personalizada</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="scale"></i>
+                    <span>Enfoque estructurado y legal</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="user-check"></i>
+                    <span>Acompañamiento durante todo el proceso</span>
+                </div>
+                <div class="trust-item">
+                    <i data-lucide="award"></i>
+                    <span>Pensado para familias que valoran hacer las cosas bien</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="section-container">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Esto es una inversión?</h3>
+                    <p class="faq-answer">No. Es una estrategia de protección financiera con planificación a largo plazo.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Por qué no es para todo el mundo?</h3>
+                    <p class="faq-answer">Porque requiere disciplina, visión y una situación financiera estable.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">¿Qué pasa si nunca ocurre nada?</h3>
+                    <p class="faq-answer">La planificación sigue cumpliendo su función: orden, respaldo y tranquilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+        <div class="section-container">
+            <h2 class="section-title">Anticiparte también es una forma de cuidar</h2>
+            <p class="cta-description">Solicita una asesoría personalizada y evalúa si esta estrategia encaja con tu forma de ver la responsabilidad familiar.</p>
+            <button class="cta-primary" onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'})">
+                Solicitar asesoría
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER LEGAL -->
+    <!-- <footer class="footer">
+        <div class="section-container">
+            <p>🔐 Al enviar este formulario aceptas nuestra política de tratamiento de datos personales.</p>
+            <p class="footer-copyright">© 2025 Protección Familiar Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer> -->
+
+    <script type="module" src="main.js"></script>
+    <script>
+        // Inicializar Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
